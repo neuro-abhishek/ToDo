@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using System.Linq.Expressions;
 
 class MongoOperationDal<T> : IMongoOperationDal<T>
     where T : IHasId
@@ -91,6 +92,18 @@ class MongoOperationDal<T> : IMongoOperationDal<T>
             // var update = Builders<T>.Update.Set(document => document.Description, data.Description);
 
             await _CollectionName.ReplaceOneAsync(filter, data);
+        }
+        catch (System.Exception e)
+        {
+            throw new Exception(e.Message);
+        }
+    }
+
+    public async Task<T> FindOneAsync(Expression<Func<T, bool>> filter)
+    {
+        try
+        {
+            return await _CollectionName.Find(filter).FirstOrDefaultAsync();
         }
         catch (System.Exception e)
         {

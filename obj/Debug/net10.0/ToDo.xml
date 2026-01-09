@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToDo</name>
+    </assembly>
+    <members>
+        <member name="M:AuthController.SignupUser(UserDto)">
+            <summary>
+            Get All TUsers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AuthController.Login(UserDto)">
+            <summary>
+            Create User
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoTaskController.GetTasks">
+            <summary>
+            Get All Tasks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoTaskController.CreateTask(ToDoTask)">
+            <summary>
+            Create a new task
+            </summary>
+            <param name="data">Task Data</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoTaskController.GetTaskById(System.String)">
+            <summary>
+            Get a task with a particular id
+            </summary>
+            <param name="id">Task Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoTaskController.DeleteTask(System.String)">
+            <summary>
+            Delete a task by a particular id
+            </summary>
+            <param name="id">Task Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToDoTaskController.TaskDescriptionUpdate(System.String,ToDoTask)">
+            <summary>
+            Change Description of a task with a particular id
+            </summary>
+            <param name="id">Task Id</param>
+            <param name="data">Updated Data</param>
+            <returns></returns>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

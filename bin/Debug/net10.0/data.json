@@ -1,0 +1,27 @@
+[
+    {
+        "Id": 3,
+        "Name": "Exercise",
+        "Description": "Do Exercise"
+    },
+    {
+        "Id": 2,
+        "Name": "Project",
+        "Description": "Complete project"
+    },
+    {
+        "Id": 1,
+        "Name": "Homework",
+        "Description": "Complete your homework"
+    },
+    {
+        "Id": 5,
+        "Name": "GYM",
+        "Description": "Hit the gym with a car"
+    },
+    {
+        "Id": 4,
+        "Name": "Grocery Purchase",
+        "Description": "Sabzi kharid le"
+    }
+]
